@@ -8,6 +8,7 @@ with
         select
 
             erp_employees.employee_id,
+            erp_employees.reports_to,
             erp_employees.last_name,
             erp_employees.first_name,
             erp_employees.full_name,
@@ -19,8 +20,7 @@ with
             erp_employees.region,
             erp_employees.postal_code,
             erp_employees.country,
-            erp_employees.notes,
-            erp_employees.reports_to,
+            erp_employees.notes
 
         from erp_employees
         left join erp_managers on erp_employees.reports_to = erp_managers.employee_id

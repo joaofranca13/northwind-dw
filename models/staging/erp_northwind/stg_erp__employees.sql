@@ -16,7 +16,7 @@ with
             cast(address as string) as address,
             cast(city as string) as city,
             cast(region as string) as region,
-            cast(postal_code as int) as postal_code,
+            cast(postal_code as string) as postal_code,
             cast(country as string) as country,
             -- home_phone,
             -- extension,

@@ -1,0 +1,51 @@
+version: 2
+
+models:
+  - name: dim_employees
+    description: Employees dimension table
+    columns:
+      - name: employee_id
+        description: lorem ipsum
+        tests:
+          - not_null
+          - unique
+
+      - name: reports_to
+        description: lorem ipsum
+
+      - name: last_name
+        description: lorem ipsum
+
+      - name: first_name
+        description: lorem ipsum
+
+      - name: full_name
+        description: lorem ipsum
+
+      - name: full_name as manager_full_name
+        description: lorem ipsum
+
+      - name: birth_date
+        description: lorem ipsum
+
+      - name: hire_date
+        description: lorem ipsum
+
+      - name: address
+        description: lorem ipsum
+
+      - name: city
+        description: lorem ipsum
+
+      - name: region
+        description: lorem ipsum
+
+      - name: postal_code
+        description: lorem ipsum
+
+      - name: country
+        description: lorem ipsum
+
+      - name: note
+        description: lorem ipsum
+

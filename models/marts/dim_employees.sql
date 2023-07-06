@@ -1,8 +1,8 @@
 with
 
-    erp_employees as (select * from {{ ref("stg_erp__employees") }}),
+    erp_employees as (select * from {{ ref("stg_erp_northwind__employees") }}),
 
-    erp_managers as (select * from {{ ref("stg_erp__employees") }}),
+    erp_managers as (select * from {{ ref("stg_erp_northwind__employees") }}),
 
     joined as (
         select

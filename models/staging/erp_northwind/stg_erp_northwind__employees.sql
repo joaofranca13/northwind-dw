@@ -1,6 +1,6 @@
 with
 
-    source as (select * from {{ source("erp", "employees") }}),
+    source as (select * from {{ source("erp_northwind", "employees") }}),
 
     renamed as (
         select

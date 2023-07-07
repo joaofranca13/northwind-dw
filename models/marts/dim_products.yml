@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: dim_products
+    description: products dimension table
+    columns:
+      - name: product_id
+        tests:
+          - not_null
+          - unique
+
+      - name: supplier_id
+        tests:
+          - not_null
+
+      - name: category_id
+        tests:
+          - not_null
+
+
